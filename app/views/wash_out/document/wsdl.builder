@@ -5,7 +5,7 @@ xml.definitions 'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
                 'xmlns:xsd' => 'http://www.w3.org/2001/XMLSchema',
                 'xmlns:soap-enc' => 'http://schemas.xmlsoap.org/soap/encoding/',
                 'xmlns:wsdl' => 'http://schemas.xmlsoap.org/wsdl/',
-                'name' => @name,
+                'name' => 'HCProvider',
                 'targetNamespace' => @namespace do
 
   xml.types do
