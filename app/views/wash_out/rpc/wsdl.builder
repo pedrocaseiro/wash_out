@@ -6,7 +6,7 @@ xml.definitions 'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
                 'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
                 'xmlns:soap-enc' => 'http://schemas.xmlsoap.org/soap/encoding/',
                 'xmlns:wsdl' => 'http://schemas.xmlsoap.org/wsdl/',
-                'name' => @name,
+                'name' => 'HCProvider',
                 'targetNamespace' => @namespace do
   xml.types do
     xml.tag! "schema", :targetNamespace => @namespace, :xmlns => 'http://www.w3.org/2001/XMLSchema' do
