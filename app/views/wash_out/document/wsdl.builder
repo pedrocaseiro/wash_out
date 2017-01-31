@@ -61,7 +61,7 @@ xml.definitions 'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
   end
 
   xml.service :name => "HCProviderService" do
-    xml.port :name => "#{@name}_port", :binding => "tns:#{@name}_binding" do
+    xml.port :name => "HCProviderPort", :binding => "tns:HCProviderPortBinding" do
       xml.tag! "soap:address", :location => WashOut::Router.url(request, @name)
     end
   end
