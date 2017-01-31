@@ -41,7 +41,7 @@ xml.definitions 'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
     end
   end
 
-  xml.binding :name => "HCProviderPort", :type => "tns:HCProviderPortBinding" do
+  xml.binding :name => "HCProviderPortBinding", :type => "tns:HCProvider" do
     xml.tag! "soap:binding", :style => 'rpc', :transport => 'http://schemas.xmlsoap.org/soap/http'
     @map.keys.each do |operation|
       xml.operation :name => operation do
@@ -61,7 +61,7 @@ xml.definitions 'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
   end
 
   xml.service :name => "HCProviderService" do
-    xml.port :name => "HCProviderPortBinding", :binding => "tns:HCProviderPortBinding" do
+    xml.port :name => "HCProviderPort", :binding => "tns:HCProviderPortBinding" do
       xml.tag! "soap:address", :location => WashOut::Router.url(request, @name)
     end
   end
