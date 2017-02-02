@@ -5,7 +5,7 @@ xml.definitions 'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
                 'xmlns:xsd' => 'http://www.w3.org/2001/XMLSchema',
                 'xmlns:soap-enc' => 'http://schemas.xmlsoap.org/soap/encoding/',
                 'xmlns:wsdl' => 'http://schemas.xmlsoap.org/wsdl/',
-                'name' => 'HCProvider',
+                'name' => 'HCProviderService',
                 'targetNamespace' => 'http://hcp.integration.truekare.jbaysolutions.com' do
 
   xml.types do
@@ -32,7 +32,7 @@ xml.definitions 'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
     end
   end
 
-  xml.portType :name => "HCProviderPort" do
+  xml.portType :name => "HCProvider" do
     @map.each do |operation, formats|
       xml.operation :name => operation do
         xml.input :message => "tns:#{operation}"
