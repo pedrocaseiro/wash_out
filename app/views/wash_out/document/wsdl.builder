@@ -1,12 +1,10 @@
 xml.instruct!
-xml.definitions 'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
-                'xmlns:tns' => @namespace,
-                'xmlns:soap' => 'http://schemas.xmlsoap.org/wsdl/soap/',
-                'xmlns:xsd' => 'http://www.w3.org/2001/XMLSchema',
-                'xmlns:soap-enc' => 'http://schemas.xmlsoap.org/soap/encoding/',
-                'xmlns:wsdl' => 'http://schemas.xmlsoap.org/wsdl/',
-                'name' => 'HCProviderService',
-                'targetNamespace' => 'http://hcp.integration.truekare.jbaysolutions.com' do
+xml.definitions 'xmlns:soap' => 'http://schemas.xmlsoap.org/wsdl/soap/',
+                'xmlns:tns' => 'http://hcp.integration.truekare.jbaysolutions.com/',
+                'xmlns:xsd' => 'http://www.w3.org/200/XMLSchema',
+                'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
+                'targetNamespace' => 'http://hcp.integration.truekare.jbaysolutions.com/',
+                'name' => 'HCProviderService' do
 
   xml.types do
     xml.tag! "schema", :targetNamespace => @namespace, :xmlns => 'http://www.w3.org/2001/XMLSchema' do
