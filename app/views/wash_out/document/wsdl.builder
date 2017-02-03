@@ -2,6 +2,7 @@ xml.instruct!
 xml.definitions 'xmlns:soap' => 'http://schemas.xmlsoap.org/wsdl/soap/',
                 'xmlns:tns' => 'http://hcp.integration.truekare.jbaysolutions.com/',
                 'xmlns:xsd' => 'http://www.w3.org/200/XMLSchema',
+                'xmlns:xsi' => 'http://www.w3.org/200/XMLSchema-instance',
                 'xmlns' => 'http://schemas.xmlsoap.org/wsdl/',
                 'targetNamespace' => 'http://hcp.integration.truekare.jbaysolutions.com/',
                 'name' => 'HCProviderService' do
